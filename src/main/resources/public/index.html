@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Anagram Landingsside</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <script type="text/javascript">
+        function getEarthquakes() {
+            var rest = new XMLHttpRequest();
+            var url = window.location.href + "earthquake";
+            rest.open("GET", url);
+            rest.onload = function() {
+                clearTable();
+                var table = document.getElementById("earthquakes");
+                var response = this.response;
+                if (response == null || response.length == 0) {
+                    alert("Something went wrong. Please try again later");
+                    return;
+                }
+                var data = JSON.parse(response);
+                var j = 0;
+                data.forEach(entry => {
+                    var newRow = table.insertRow(j);
+
+                var headerCell = document.createElement('th');
+                headerCell.innerHTML = entry;
+                newRow.appendChild(headerCell)
+            });
+
+            }
+            rest.send();
+        }
+        function clearTable() {
+            var table = document.getElementById('earthquakes');
+            while(table.hasChildNodes()) {
+                table.removeChild(table.firstChild);
+            }
+        }
+    </script>
+</head>
+<body>
+<h1>Earthquakes the last hour</h1>
+<div id="buttonContainer">
+    <button id="green" onclick="getEarthquakes()">Find</button>
+    <button id="red" onclick="clearTable()">Reset</button>
+</div>
+<div>
+    <table id="earthquakes"></table>
+</div>
+</body>
+</html>

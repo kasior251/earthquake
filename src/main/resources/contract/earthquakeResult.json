@@ -1,0 +1,141 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "generated": 1614862860000,
+    "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/1.0_hour.geojson",
+    "title": "USGS Magnitude 1.0+ Earthquakes, Past Hour",
+    "status": 200,
+    "api": "1.10.3",
+    "count": 3
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 1.81,
+        "place": "16 km WNW of Longdale, Oklahoma",
+        "time": 1614862535712,
+        "updated": 1614862631340,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ok2021ekgu",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/ok2021ekgu.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 50,
+        "net": "ok",
+        "code": "2021ekgu",
+        "ids": ",ok2021ekgu,",
+        "sources": ",ok,",
+        "types": ",origin,phase-data,",
+        "nst": 17,
+        "dmin": 0.1947558969,
+        "rms": 0.447717688,
+        "gap": 111.2660065,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 1.8 - 16 km WNW of Longdale, Oklahoma"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.72533417,
+          36.18334198,
+          3.691351652
+        ]
+      },
+      "id": "ok2021ekgu"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.17,
+        "place": "27km ENE of Pine Valley, CA",
+        "time": 1614859396200,
+        "updated": 1614860064420,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ci39808832",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/ci39808832.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 72,
+        "net": "ci",
+        "code": "39808832",
+        "ids": ",ci39808832,",
+        "sources": ",ci,",
+        "types": ",focal-mechanism,nearby-cities,origin,phase-data,scitech-link,",
+        "nst": 57,
+        "dmin": 0.04475,
+        "rms": 0.22,
+        "gap": 60,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 2.2 - 27km ENE of Pine Valley, CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.2648333,
+          32.9236667,
+          3.54
+        ]
+      },
+      "id": "ci39808832"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 1.5,
+        "place": "28 km NW of Nanwalek, Alaska",
+        "time": 1614859278993,
+        "updated": 1614859614307,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ak0212we0bjv",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/ak0212we0bjv.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 35,
+        "net": "ak",
+        "code": "0212we0bjv",
+        "ids": ",ak0212we0bjv,",
+        "sources": ",ak,",
+        "types": ",origin,",
+        "nst": null,
+        "dmin": null,
+        "rms": 0.23,
+        "gap": null,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 1.5 - 28 km NW of Nanwalek, Alaska"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -152.2769,
+          59.5384,
+          70.1
+        ]
+      },
+      "id": "ak0212we0bjv"
+    }
+  ],
+  "bbox": [
+    -152.2769,
+    32.9236667,
+    3.54,
+    -98.72533417,
+    59.5384,
+    70.1
+  ]
+}
